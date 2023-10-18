@@ -34,8 +34,6 @@ resource "azurerm_subnet" "mc-subnet" {
     ]
   }
 }
-
-#Create subnets
 resource "azurerm_subnet" "be-subnet" {
   name                 = "be-subnet"
   resource_group_name  = azurerm_resource_group.rg.name
